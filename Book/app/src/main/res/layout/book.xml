@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+    android:layout_height="200dp"
+    android:layout_margin="5dp">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/Pic_Book"
+        tools:src="@drawable/ic_launcher_background"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/Pic_Book">
+        <TextView
+           android:id="@+id/Title_Book"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textStyle="bold"
+           tools:text="Space for title"/>
+      <RatingBar
+          android:id="@+id/BookRating"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:numStars="5"
+          style="?android:attr/ratingBarStyleSmall"
+          android:rating="2"
+          android:stepSize="0.5"/>
+        <TextView
+            android:id="@+id/BookCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Cost"/>
+    </LinearLayout>
+</RelativeLayout>
+  </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,2 @@
+rootProject.name='The Book Loft'
+include ':app'

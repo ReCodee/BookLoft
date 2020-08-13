@@ -1,0 +1,100 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="android.example.thebookloft"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\TheBookLoft\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\TheBookLoft\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:5:5-67
+11-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:6:5-79
+12-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:8:5-45:19
+15        android:allowBackup="true"
+15-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.2.0] C:\Users\INDIA\.gradle\caches\transforms-2\files-2.1\ccb20ed30836142a5a66c164bb92a0ce\core-1.2.0\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:10:9-43
+19        android:label="@string/app_name"
+19-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:11:9-41
+20        android:largeHeap="true"
+20-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:12:9-33
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:14:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:15:9-40
+25        <activity
+25-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:16:9-27:20
+26            android:name="android.example.thebookloft.Search_Results"
+26-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:16:19-49
+27            android:configChanges="orientation|screenSize" >
+27-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:17:13-59
+28            <intent-filter>
+28-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:18:12-21:29
+29                <action android:name="android.intent.action.SEARCH" />
+29-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:19:17-71
+29-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:19:25-68
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:20:17-77
+31-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:20:27-74
+32            </intent-filter>
+33
+34            <meta-data
+34-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:23:13-25:54
+35                android:name="android.app.searchable"
+35-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:24:17-54
+36                android:resource="@xml/searchable" />
+36-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:25:17-51
+37        </activity>
+38        <activity
+38-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:28:9-41:20
+39            android:name="android.example.thebookloft.MainActivity"
+39-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:29:13-41
+40            android:configChanges="orientation|screenSize" >
+40-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:30:13-59
+41            <intent-filter>
+41-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:31:13-36:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:32:17-69
+42-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:32:25-66
+43                <action android:name="android.intent.action.SEARCH" />
+43-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:19:17-71
+43-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:19:25-68
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:20:17-77
+45-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:20:27-74
+46            </intent-filter>
+47
+48            <meta-data
+48-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:23:13-25:54
+49                android:name="android.app.searchable"
+49-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:24:17-54
+50                android:resource="@xml/searchable" />
+50-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:25:17-51
+51        </activity>
+52
+53        <provider
+53-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:42:9-44:62
+54            android:name="android.example.thebookloft.SuggestionsContentProvider"
+54-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:43:13-55
+55            android:authorities="com.BookLoft.books.search" />
+55-->E:\TheBookLoft\app\src\main\AndroidManifest.xml:44:13-60
+56    </application>
+57
+58</manifest>
